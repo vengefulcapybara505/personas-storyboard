@@ -1,5 +1,104 @@
 
+body{
+    font-family: sans-serif;
+    margin: auto;
+    color: rgb(38, 38, 38);
+
+}
 
 h1{
-color: red;
+color: #48bae8;
+text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: rgb(38, 38, 38);
+}
+h3
+{
+    text-align: center;
+    color: #48bae8;
+}
+
+strong{
+    color: #48bae8;
+}
+.personas{
+    text-align: center;
+}
+.persona
+{
+    margin: 5%;
+    padding: 1%;
+    border: 5px #48bae8 solid;
+    border-radius: 10px;
+}
+
+.spacer{
+    margin: 3%;
+}
+
+.q-list{
+    display: flex;
+    justify-content: center;
+}
+
+ol{
+    color: #696969;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 5px #48bae8 solid;
+    border-radius: 10px;
+    max-width: 50%;
+}
+
+.observations{
+    color: #696969;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 5px #48bae8 solid;
+    border-radius: 10px;
+    max-width: 50%;
+}
+
+.interview{
+    display: flex;
+    justify-content: center;
+}
+
+.interview-list{
+    max-width: 50%;
+}
+
+p{
+    text-align: center;
+}
+
+.intro-p{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/**
+.responses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+**/
+.walmartimgdiv{
+    display: flex;
+    justify-content: center;
+}
+
+.walmartimg{
+    max-width: 30%;
+}
+.sketch{
+    max-width: 90%;
+}
+.storyboard{
+    display: flex;
+    justify-content: center;
 }

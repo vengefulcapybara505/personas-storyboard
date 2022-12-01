@@ -1,9 +1,58 @@
+/*set border-box to that css uses a more reasonable box model*/
+
+*, *::before, *::after{
+	box-sizing: border-box;
+}
+
+
+/*gets rid of default margins*/
+*
+{
+	margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color: white;
+    
+}
+
+
+
+
+/*prevents these from expanding beyond its container and taking up a row*/
+img, picture, video, canvas, svg
+{
+	display: block;
+	max-width: 100%
+}
+
+/*makes tables look like spreadsheets and less like a spaced-out-grid*/
+
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.return
+{
+    padding: 1%;
+    width: 10%;
+}
+
+.return-link
+{
+    color: white;
+    padding: 5%;
+    text-align: center;
+    text-decoration: none;
+}
+
+
 
 body{
     font-family: sans-serif;
     margin: auto;
-    color: rgb(38, 38, 38);
-
+    color: white;
+    background-color: black;
 }
 
 h1{
@@ -13,7 +62,7 @@ text-align: center;
 
 h2{
     text-align: center;
-    color: rgb(38, 38, 38);
+    
 }
 h3
 {
@@ -24,15 +73,31 @@ h3
 strong{
     color: #48bae8;
 }
-.personas{
-    text-align: center;
-}
+
+
 .persona
 {
     margin: 5%;
-    padding: 1%;
+    padding: 2%;
     border: 5px #48bae8 solid;
     border-radius: 10px;
+    text-align: center;
+}
+.persona-p
+{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.persona-img
+{
+    display: flex;
+    justify-content: center;
+}
+
+.q-title
+{
+    text-decoration: underline;
 }
 
 .spacer{
@@ -45,7 +110,7 @@ strong{
 }
 
 ol{
-    color: #696969;
+    
     padding-top: 1%;
     padding-bottom: 1%;
     border: 5px #48bae8 solid;
@@ -54,7 +119,7 @@ ol{
 }
 
 .observations{
-    color: #696969;
+    
     padding-top: 1%;
     padding-bottom: 1%;
     border: 5px #48bae8 solid;
@@ -71,22 +136,13 @@ ol{
     max-width: 50%;
 }
 
-p{
-    text-align: center;
-}
+
 
 .intro-p{
     padding-left: 5%;
     padding-right: 5%;
 }
-/**
-.responses{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-**/
+
 .walmartimgdiv{
     display: flex;
     justify-content: center;
@@ -102,3 +158,38 @@ p{
     display: flex;
     justify-content: center;
 }
+
+.hvr-reveal {
+    padding: 10%;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-color: #48bae8;
+    border-style: solid;
+    border-width: 0;
+    -webkit-transition-property: border-width;
+    transition-property: border-width;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-reveal:hover:before, .hvr-reveal:focus:before, .hvr-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    border-width: 5px;
+    border-radius: 25px;
+  }

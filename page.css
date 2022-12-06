@@ -23,6 +23,11 @@ img, picture, video, canvas, svg
 {
 	display: block;
 	max-width: 100%
+
+}
+
+img{
+    border-radius: 10px;
 }
 
 /*makes tables look like spreadsheets and less like a spaced-out-grid*/
@@ -157,6 +162,11 @@ ol{
 .storyboard{
     display: flex;
     justify-content: center;
+}
+
+.conclusion
+{
+    padding: 5%;
 }
 
 .hvr-reveal {

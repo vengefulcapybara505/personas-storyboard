@@ -45,6 +45,8 @@ table{
 
 .return-link
 {
+	white-space: nowrap;
+    font-size: 18px;
     color: white;
     padding: 5%;
     text-align: center;

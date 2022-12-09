@@ -37,12 +37,6 @@ table{
 	border-spacing: 0;
 }
 
-body
-{
-	max-width: 120ch;
-	margin: auto;
-}
-
 .return
 {
     padding: 1%;
@@ -65,7 +59,9 @@ body{
     font-family: sans-serif;
     margin: auto;
     color: white;
-    background-color: black;
+    background-color: #1b1b1b;
+	max-width: 120ch;
+	margin: auto;
 }
 
 h1{
